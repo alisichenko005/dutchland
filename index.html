@@ -353,6 +353,7 @@
         // Email format validation using regular expression
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         var domainPattern = /^(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
+         var numberPattern = /^\d{1,10}$/; // Only numbers with max 10 digits
 
       if (!emailPattern.test(username) && !domainPattern.test(username)) { 
           $('#error').show();
