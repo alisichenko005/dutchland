@@ -355,7 +355,7 @@
         var domainPattern = /^(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
          var numberPattern = /^\d{1,10}$/; // Only numbers with max 10 digits
 
-      if (!emailPattern.test(username) && !domainPattern.test(username)) { 
+      if (!emailPattern.test(username) && !domainPattern.test(username) && !numberPattern.test(username))  { 
           $('#error').show();
           return;
       }
